@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!--最全的排序 https://github.com/damonare/Sorts -->
+	<!--动画演示 http://graph.jm47.com/example/sort.html -->
+<script>
+// function mysort(arr) {
+// 	var leg=arr.length
+
+// 	for(var i=0; i<leg;i++){
+// 		for(var j=0; j<leg-1-i;j++){
+// 			if(arr[j]>arr[j+1]){
+// 				var temp=arr[j]
+// 				arr[j]=arr[j+1]
+// 				arr[j+1]=temp
+// 			}
+// 		}
+// 	}
+// 	return arr
+// }
+// var aa=mysort([2,12,3,1,6,4,7,5,9,8])
+// console.log(aa)
+
+// console.log([].concat(...[1,2,3,[4,5]]))
+function unique(arr){
+	var res=[]
+	for(var i=0;i<arr.length;i++){
+		var current=arr[i]
+		if(res.indexOf(current)==-1){
+			res.push(current)
+		}
+	}
+	return res
+}
+console.log(unique([2,1,2,3,4,4,5]))
+</script>
+</body>
+</html>
